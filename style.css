@@ -33,3 +33,21 @@ body {
     margin-bottom: 50px;
     color: rgb(65, 24, 160);
 }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.user-card {
+  width: 300px;
+  min-height: 480px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
