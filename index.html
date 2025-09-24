@@ -13,6 +13,13 @@
   </head>
   <body>
     <header>
+      <div class="toolbar">
+        <button id="btnSurprise">🍒Surprise me</button>
+        <button id="btnToggleTheme">🌗Toggle Dark/Light</button>
+      </div>
+      <section id="random-fact" aria-live="polite">
+        Click "Surprise me" to see a random fact
+        </section>
       <!-- Made some improvements to get a better structure from an SEO best practices perspective. -->
       <h1>Welcome to Our Homepage!</h1>
     <p class="intro-text">
@@ -29,14 +36,14 @@
           style="width: 100px"
           alt="Inga's Image"
         /><!--TODO Remove styling when css is finished-->
-        <div id="user-info">
-          <div id="user-bio">
+        <div class="user-info">
+          <div class="user-bio">
             <h3>Bio</h3>
             <p>
               Inga is a goal-oriented and hardworking junior software developer.
             </p>
           </div>
-          <div id="user-fun-facts">
+          <div class="user-fun-facts">
             <h3>Fun Facts</h3>
             <ul>
               <li>Fun fact 1</li>
@@ -44,7 +51,7 @@
               <li>Fun fact 3</li>
             </ul>
           </div>
-          <div id="user-contacts">
+          <div class="user-contacts">
             <h3>Contacts</h3>
             <p>
               Email:
@@ -69,14 +76,14 @@
     style="width: 100px"
     alt="Deniss' Image"
   />
-  <div id="user-info">
-    <div id="user-bio">
+  <div class="user-info">
+    <div class="user-bio">
       <h3>Bio</h3>
       <p>
         Deniss is creative junior developer, passionate about building meaningful digital products.
       </p>
     </div>
-    <div id="user-fun-facts">
+    <div class="user-fun-facts">
       <h3>Fun Facts</h3>
       <ul>
         <li>Play piano 🎹</li>
@@ -84,7 +91,7 @@
         <li>Builds websites for fun 💻</li>
       </ul>
     </div>
-    <div id="user-contacts">
+    <div class="user-contacts">
       <h3>Contacts</h3>
       <p>
         Email:
@@ -109,14 +116,14 @@
           style="width: 100px"
           alt="Nils' Image"
         /><!--TODO Remove styling when css is finished-->
-        <div id="user-info">
-          <div id="user-bio">
+        <div class="user-info">
+          <div class="user-bio">
             <h3>Bio</h3>
             <p>
               Nils is a dedicated and qurious junior software developer, eager to make their own JS framework.
             </p>
           </div>
-          <div id="user-fun-facts">
+          <div class="user-fun-facts">
             <h3>Fun Facts</h3>
             <ul>
               <li>Fun fact 1</li>
@@ -124,7 +131,7 @@
               <li>Fun fact 3</li>
             </ul>
           </div>
-          <div id="user-contacts">
+          <div class="user-contacts">
             <h3>Contacts</h3>
             <p>
               Email:
@@ -145,5 +152,6 @@
     <footer>
       &copy; Made by Collaborative Coding Group Nr.3, September 2025.
     </footer>
+     <script src="script.js"></script>
   </body>
 </html>
