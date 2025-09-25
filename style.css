@@ -1,7 +1,6 @@
 
 * {
   margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,11 +15,7 @@ main {
   gap: 20px;   
   justify-content: center;
 }
-section {
-  background: rgba(255,255,255,0.8); 
-  padding: 20px;
-  border-radius: 12px;
-}
+
 body {
   background-image: url("./assets/background2.png");
   background-size: cover;
@@ -31,6 +26,11 @@ body {
 body.dark {
   background-image: url("./assets/background.png");
 }
+
+img {
+  width: 50%;
+}
+
 .intro-text {
     text-align: center;
     font-size: 24px;
@@ -55,4 +55,38 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.hidden-fact-box {
+  background: rgba(255,255,255,0.8); 
+  padding: 20px;
+  border-radius: 12px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fact-box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.toolbar-btn {
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0 1rem 1rem 1rem;
+  align-self: center;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
 }

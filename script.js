@@ -21,5 +21,6 @@ btnSurprise.addEventListener("click", () =>
         return;
     }
     const i = Math.floor(Math.random() * facts.length);
-    factBox.textContent = facts[i]
+    factBox.textContent = facts[i];
+    factBox.style.display = "inline-block";
 });

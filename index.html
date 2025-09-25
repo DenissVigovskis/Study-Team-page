@@ -13,13 +13,6 @@
   </head>
   <body>
     <header>
-      <div class="toolbar">
-        <button id="btnSurprise">🍒Surprise me</button>
-        <button id="btnToggleTheme">🌗Toggle Dark/Light</button>
-      </div>
-      <section id="random-fact" aria-live="polite">
-        Click "Surprise me" to see a random fact
-        </section>
       <!-- Made some improvements to get a better structure from an SEO best practices perspective. -->
       <h1>Welcome to Our Homepage!</h1>
     <p class="intro-text">
@@ -27,13 +20,20 @@
         other!
       </p>
       <!--It would be better to put here navigation tabs, but we don't plan to use them in this project-->
+      <div class="toolbar">
+        <button id="btnSurprise" class="toolbar-btn">🍒Surprise me</button>
+        <button id="btnToggleTheme" class="toolbar-btn">🌗Toggle Dark/Light</button>
+      </div>
+      <div class="fact-box-wrapper">
+        <div id="random-fact" class="hidden-fact-box" aria-live="polite">     
+      </div>
+      </div>
     </header>
     <main>
       <section id="user-inga" class="user-card">
         <h2>Inga</h2>
         <img
           src="./assets/inga.jpg"
-          style="width: 100px"
           alt="Inga's Image"
         /><!--TODO Remove styling when css is finished-->
         <div class="user-info">
@@ -46,9 +46,9 @@
           <div class="user-fun-facts">
             <h3>Fun Facts</h3>
             <ul>
-              <li>Fun fact 1</li>
-              <li>Fun fact 2</li>
-              <li>Fun fact 3</li>
+              <li>Play violin 🎻</li>
+              <li>Tried to play guitar - unsuccessfully 🤷‍♀️</li>
+              <li>Thinks semicolons are scarier than musical notes 😅</li>
             </ul>
           </div>
           <div class="user-contacts">
@@ -69,43 +69,35 @@
         </div>
       </section>
       <section id="user-deniss" class="user-card">
-
   <h2>Deniss</h2>
-  <img
-    src="./assets/deniss.png"
-    style="width: 100px"
-    alt="Deniss' Image"
-  />
-  <div class="user-info">
-    <div class="user-bio">
-      <h3>Bio</h3>
-      <p>
-        Deniss is creative junior developer, passionate about building meaningful digital products.
-      </p>
-    </div>
-    <div class="user-fun-facts">
-      <h3>Fun Facts</h3>
-      <ul>
-        <li>Play piano 🎹</li>
-        <li>Loves mountain hiking 🏔️</li>
-        <li>Builds websites for fun 💻</li>
-      </ul>
-    </div>
-    <div class="user-contacts">
-      <h3>Contacts</h3>
-      <p>
-        Email:
-        <a href="mailto:deniss.vigovskis@startschool.org"
-          >deniss.vigovskis@startschool.org</a
-        >
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/denissvigovskis" target="_blank"
-          >Deniss Vigovskis</a
-        >
-      </p>
-    </div>
+    <img
+      src="./assets/deniss.png"
+      alt="Deniss' Image"
+    />
+    <div class="user-info">
+      <div class="user-bio">
+        <h3>Bio</h3>
+        <p>
+          Deniss is creative junior developer, passionate about building meaningful digital products.
+        </p>
+      </div>
+      <div class="user-fun-facts">
+        <h3>Fun Facts</h3>
+        <ul>
+          <li>Play piano 🎹</li>
+          <li>Loves mountain hiking 🏔️</li>
+          <li>Builds websites for fun 💻</li>
+        </ul>
+      </div>
+      <div class="user-contacts">
+        <h3>Contacts</h3>
+        <p>
+          Email:
+          <a href="mailto:deniss.vigovskis@startschool.org"
+            >deniss.vigovskis@startschool.org</a
+          >
+        </p>        
+      </div>
   </div>
 </section>
 
@@ -113,22 +105,21 @@
         <h2>Nils</h2>
         <img
           src=""
-          style="width: 100px"
           alt="Nils' Image"
         /><!--TODO Remove styling when css is finished-->
         <div class="user-info">
           <div class="user-bio">
             <h3>Bio</h3>
             <p>
-              Nils is a dedicated and qurious junior software developer, eager to make their own JS framework.
+              Nils is a dedicated and curious junior software developer, eager to make their own JS framework.
             </p>
           </div>
           <div class="user-fun-facts">
             <h3>Fun Facts</h3>
             <ul>
-              <li>Fun fact 1</li>
-              <li>Fun fact 2</li>
-              <li>Fun fact 3</li>
+              <li>Knows that the only real low-level language is assembly</li>
+              <li>Wants to explore JS frontend ML frameworks</li>
+              <li>Knows that all you really need is attention</li>
             </ul>
           </div>
           <div class="user-contacts">
@@ -138,13 +129,7 @@
               <a href="mailto:nils.ozols@startschool.org"
                 >nils.ozols@startschool.org</a
               >
-            </p>
-            <p>
-              LinkedIn:
-              <a href="https://www.linkedin.com" target="_blank"
-                >Nils Ozols</a
-              >
-            </p>
+            </p>            
           </div>
         </div>
       </section>
